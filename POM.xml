@@ -8,7 +8,7 @@
         stage('Hello') {
             steps {
                 echo 'Hello World'
-                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: '123456789', url: 'https://github.com/dungipravalikareddy/maven-jenkins.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: '123456789', url: 'https:https://github.com/akhil690/JAVA-pipeline.git']]])
                 sh "mvn -Dmaven.test.failure.ignore=true clean package"
             }
          }
